@@ -201,13 +201,13 @@ input:focus {
 }
 
 .number {
-  font-size: 5rem; /* Increase the font size */
+  font-size: 4rem; /* Increase the font size */
   font-weight: 800;
   color: hsl(259, 100%, 65%);
 }
 
 .label {
-  font-size: 5rem; /* Increase the font size */
+  font-size: 4rem; /* Increase the font size */
   font-weight: 800;
   color: hsl(0, 0%, 8%); 
 }
