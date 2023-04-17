@@ -1,0 +1,224 @@
+/* Add local font files if needed */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: hsl(0, 0%, 8%);
+}
+
+/* Main container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 0.8rem; 
+  text-transform: uppercase; 
+  padding-left: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(33% - 10px);
+}
+
+input {
+  width: 100%; /* Adjust the width */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 32px;
+  font-weight: 700;
+  border: 2px solid hsl(0, 0%, 86%);
+  border-radius: 12px;
+}
+
+input:focus {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+}
+
+.error-message {
+  display: block;
+  visibility: hidden;
+  font-size: 12px;
+  color: hsl(0, 100%, 67%);
+  min-height: 20px;
+  margin-top: 4px;
+}
+
+.input-error {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.separator-left,
+.separator-right {
+  flex-grow: 1;
+  height: 1px;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.separator-left {
+  margin-right: 16px;
+}
+
+.separator-right {
+  margin-left: 16px;
+}
+
+.submit-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  filter: hue-rotate(-25deg) saturate(1.67) brightness(1.63);
+}
+
+.submit-btn img {
+  width: 64px;
+  height: 64px;
+}
+
+/* Results styles */
+.results {
+  display: flex;
+  flex-direction: column; 
+  align-items: left;
+  width: 100%;
+  max-width: 500px;
+  gap: 0.5rem; 
+}
+
+.years, .months, .days {
+  display: flex;
+  align-items: center; 
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+.number {
+  font-size: 5rem; /* Increase the font size */
+  font-weight: 800;
+  color: hsl(259, 100%, 65%);
+}
+
+.label {
+  font-size: 5rem; /* Increase the font size */
+  font-weight: 800;
+  color: hsl(0, 0%, 8%); 
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
